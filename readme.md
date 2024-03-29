@@ -6,6 +6,32 @@ This API Allows you to persist transfer deals for auditing.
 ## Development Base URL
 http://localhost:8080/api/v1
 
+## Usage
+
+### Running the API
+
+To run the application, follow these steps:
+
+1. Make sure you have Docker installed on your system.
+2. Navigate to the root directory of the project.
+3. Open a terminal window.
+4. Run the following command to start the application:
+
+```bash
+./bootstrap.ps1 -deploy
+```
+
+### Stopping the API
+
+To run the application, follow these steps:
+
+1. Open a terminal window.
+2. Navigate to the root directory of the project.
+3. Run the following command:
+
+```bash
+./bootstrap.ps1 -stop
+```
 
 ## Endpoints
 
