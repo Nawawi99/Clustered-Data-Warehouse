@@ -24,6 +24,8 @@ public class DealController {
     @PostMapping
     public ResponseEntity<DealDTO> persistDeal(@Validated @RequestBody DealDTO dealDTO,
                                                BindingResult bindingResult) {
+        logger.info("into -> persistDeal method");
+
         DealDTO savedDealDTO = dealService.persistDeal(dealDTO, bindingResult);
 
         return new ResponseEntity<>(savedDealDTO, HttpStatus.OK);
