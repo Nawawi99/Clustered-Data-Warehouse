@@ -31,8 +31,8 @@ public class GlobalExceptionHandler {
             errorMessage = "A duplicate deal was encountered.";
         }
 
-        logger.warn("Received DuplicateDealException with message/s: {}", ex.getMessage()
-                                                                            .isBlank() ? errorMessage : ex.getMessage());
+        logger.warn("Received DuplicateDealException with message/s: {}", ex.getMessage() == null || ex.getMessage()
+                                                                                                       .isBlank() ? errorMessage : ex.getMessage());
 
         ErrorResponse errorResponse = new ErrorResponse(
                 LocalDateTime.now(),
